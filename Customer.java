@@ -6,12 +6,25 @@ public class Customer {
     private String lastName;
     private Account[] accounts;
     private int numberOfAccounts;
+    private final int STARTNUMID = 1000;
+    private static int customerID = 0;
+    private int thisCustomerID;
 
     public Customer(String firsName, String lastName) {
         this.firstName = firsName;
         this.lastName = lastName;
         accounts = new Account[10];
         numberOfAccounts = 0;
+        customerID++;
+        setCustomerID();
+    }
+
+    public void setCustomerID() {
+        thisCustomerID = customerID;
+    }
+
+    public int getCustomerID() {
+        return customerID;
     }
 
     public String getFirstName() {

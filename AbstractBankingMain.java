@@ -32,7 +32,8 @@ public class AbstractBankingMain {
         System.out.println(custReference.getFirstName());
 
          for (Customer custom : bank.getAllCustomers()) {
-             System.out.println(custom.getNumberOfAccounts());
+             System.out.println(custom.getFirstName() + "'s number of accounts: " + custom.getNumberOfAccounts());
+             System.out.println(custom.getFirstName() + "'s id: " + custom.getCustomerID());
          }
 
          Storage storage = new Storage(customer.getFirstName(), customer.getLastName());
