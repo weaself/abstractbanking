@@ -36,7 +36,7 @@ public class AbstractBankingMain {
              System.out.println(custom.getFirstName() + "'s id: " + custom.getCustomerID());
          }
 
-         Storage storage = new Storage(customer.getFirstName(), customer.getLastName());
+         Storage storage = new Storage(customer.getFirstName(), customer.getLastName(), customer.getCustomerID());
 
 
 
