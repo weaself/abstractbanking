@@ -10,8 +10,8 @@ public class Customer {
     private static int customerID = 0;
     private int thisCustomerID;
 
-    public Customer(String firsName, String lastName) {
-        this.firstName = firsName;
+    public Customer(String firstName, String lastName) {
+        this.firstName = firstName;
         this.lastName = lastName;
         accounts = new Account[10];
         numberOfAccounts = 0;
